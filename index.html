@@ -13,31 +13,34 @@
      <link rel="stylesheet" href="https://fontawesome.com/icons/graduation-cap?s=regular&f=classic">
 
     <script src="formValidation.js"></script>
+  
 
 </head>
 
 <body >
-    <header>
+    <header class="navigation">
         <!-- <span>B</span>Filo<span>s</span> -->
         <img src="logo.png">
         <nav class="navbar">
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>            
-                <li><a href="#blog">Blog</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+            <ul class="menu" id="menu">
+                <li class="menuList"><a href="#home">Home</a></li>
+                <li class="menuList" ><a href="#about">About</a></li>     
+                <li class="menuList" ><a href="#service">Service</a></li>     
+                <li class="menuList"><a href="#portfolio">Portfolio</a></li>     
+                <li class="menuList"><a href="#blog">Blog</a> </li>
+                <li class="menuList"> <a href="#contact">Contact</a> </li>
             </ul>
             <hr>
             <ul class="icons">
-                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
-                <li><a href=""><i class='bx bxl-twitter'></i></a></li>
-                <li><a href=""><i class='bx bxl-behance'></i></a></li>
-                <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-behance'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
             </ul>
             <a href="#" class="toggle-button">
-                <span class="bar" ></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar one" ></span>
+                <span class="bar two"></span>
+                <span class="bar three"></span>
             </a>
         </nav>  
         
@@ -409,7 +412,12 @@
             </div>
         </di >
         <div class="contents">
-            <div class="image1 "></div>
+            <div class="image1 ">
+                <div class="pop-up">
+                    <h2>Title</h2>
+                    <p>YouTube</p>
+                </div>
+            </div>
             <div class="image2 "></div>
             <div class="image3 "></div>
             <div class="image4 "></div>
@@ -461,19 +469,16 @@
                     <p>kigali-Rwanda</p>
                 </div>
             </div>
-            <div class="write-for-me">
-            
- 
-    <form id="login-form" name="myForm"  onsubmit=" return validationForm() " method="get">
-                     <input type="text" id="username" name="username" placeholder="Your Name">
-                     <input type="text" id="phone" name="phone" placeholder="Your Phone"  onsubmit="return validatePhone(phone)"><br>
-                     <input type="email" id="email" name="email" placeholder="Your Email">
-                     <input type="text" id="username" name="username" placeholder="Subject" ><br>
-                     <textarea name="message" id="message" placeholder="Write your message  here"></textarea>
-                     <button type="submit">Submit Now</button>
-                       
-                </form>
-            </div>
+            <form id="login-form" name="myForm" class="write-for-me" onsubmit=" return validationForm() " method="get">
+                <div class="small-in">
+                    <input type="text" id="username" name="username" placeholder="Your Name">
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone"  onsubmit="return validatePhone(phone)">
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <input type="text" id="username" name="username" placeholder="Subject" >
+                </div>
+                <textarea name="message" id="message" placeholder="Write your message  here"></textarea>
+                <button type="submit">Submit Now</button>
+            </form>
         </div>
 
     </section>
@@ -493,12 +498,13 @@
 
             </div>
         </div>
-        <p>The love of coding developed this</p>
+        <p>The love of coding developed this &copy 2022 </p>
+
    </section>
 
 
 
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+   <script src="toggleButton.js"></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 </body>
 </html>
