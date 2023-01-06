@@ -687,9 +687,6 @@ align-items: center;
   padding-left: 0px;
   padding-right: 0px;
   text-align: left;
-  
-
- 
 }
 
 .sub-container .info span{
@@ -941,7 +938,7 @@ align-items: center;
   padding-left: 34px;
   padding-right: 34px;
   font-size: 100px;
-  ;
+  
 }
 .testimonial p{
   font-size: 28px;
@@ -971,8 +968,7 @@ align-items: center;
 }
 .description p{
   color: #7D7596;
-  top: 0;
-}
+  top: 0;}
 .testimonial .dot-links {
   justify-content: space-between;
   margin-top: 34px;
@@ -1570,7 +1566,7 @@ align-items: center;
   margin-top:600px;
   height: 1200px;
   width: 100%;
-  background-color: brown;
+  /* background-color: brown; */
 }
 .container {
   display: grid; 
@@ -1590,7 +1586,7 @@ align-items: center;
 }
 .container  div h3{
   text-align: left;
-  margin-top: 40px;
+  margin-top: 120px;
   font-size: 32px;
 }
 .sub-container .circle div{
@@ -1605,23 +1601,31 @@ align-items: center;
 }
 .sub-container .circle .line{
   height: 60px;
-  width: 0px;
+  /* width: 0px; */
   border: 1px solid #8D86A4;
   margin-left: 32px;
-
 }
 
 
 .portfolio{
-  margin-top:150px;
+  margin-top:240px;
   height: 1250px;
   width: 100%;
 }
+.portfolio .sub-title{
+  color:#fff;
+  display: inline-flex;
+  gap: 50px;
+  margin-top: 70px;
+} 
 
-
+.portfolio .contents{ 
+  /* display:grid; */
+  /* grid-template-rows: auto; */
+  grid-template-columns: auto;
 }
 
-
+}
 
 @media(max-width: 767px){
   .box-container {
@@ -1663,8 +1667,6 @@ align-items: center;
   padding-top: 24px;
   font-size: 32px;
 }
- 
-
 }
 
 @media(max-width: 639px){
@@ -1685,11 +1687,153 @@ align-items: center;
   margin-top:600px;
   height: 1200px;
   width: 100%;
-  background-color: brown;
+  /* background-color: brown; */
 }
 .resume .resume-title{
   padding-top:40px;
 
 }
+.content-boxes{
+  display: grid;
+  grid-template-columns: auto ;
+  width:100%;
+  height: 300px;
+  gap: 20px;
+}
+}
 
+@media(max-width: 414px){
+
+  .about-title h3 {
+    margin-top: 24px;
+    font-size: 17px;
+}
+.skills-title h4 {
+    margin-top: 18px;
+    font-size: 17px;
+}
+.service .service-title h4 {
+  font-size: 17px;
+  margin-top: 12px;
+}
+.resume{
+  margin-top:1800px;
+  height: 1600px;
+  width: 100%;
+  /* background-color: brown; */
+}
+
+  .resume .container div h3{
+    margin: 90px 0;
+    font-size: 28px;
+  }
+  .container .sub-container{
+    margin-top:40px;
+  }
+  
+  .sub-container .info span{
+    color:white;
+    font-size: 20px;
+  }
+  .sub-container .info h4{
+    color:white;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+.portfolio h4 {
+  padding-top: 54px;
+  font-size: 17px;
+}
+.portfolio .sub-title {
+
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  gap: 2px;
+  margin-top: 40px;
+}
+.portfolio .contents{
+  font-display: grid;
+  grid-template-columns: auto;
+  margin-bottom: 1200px;
+
+}
+.portfolio .contents div {
+  justify-content: center;
+  height: 320px;
+  width:100% ;
+  background-color:#3A2B71;
+  gap: 8px;
+  /* border-radius: 12px;
+  background-size: cover;
+  background-position: center; */
+} 
+ .testimonial{
+  margin-top: 2000px;
+  /* background: darkorange; */
+}
+.testimonial i{
+  font-size: 60px;
+}
+.testimonial p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 14px;
+    /* margin-left: 58px;  */
+    /* margin-right: 58px; */
+    justify-content: space-between;
+    font-style: italic;
+  }
+  .testimonial .dot-links div{
+    width: 15px;
+    height: 15px;
+    background-color: #00C0FC;
+    display: inline-flex;
+    border-radius: 50%;
+    gap:9px
+  }
+  .frameworks {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    align-items: center;
+    margin-top: 900px;
+    width: 100%;
+    height: 250px;
+    background-color:#432D92;
+    border-radius: 8px;
+  }
+ .blog{
+    /* padding-top: 30px; */
+   height: 700px;
+   margin-bottom: 80px;
+   margin-top: 320px;
+}
+.blog .blog-news div{
+  font-display: grid;
+  grid-template-columns:auto;   
+  width: 100%;
+  height: 100%;
+}
+.blog-news .img1{
+  height:380px;
+  width: 100%;
+  row-gap: 23px;
+}
+.blog-news .img2{
+  height:380px;
+  width: 100%;
+}
+.blog-news .img3{
+  height:380px;
+   width: 100%;
+}
+.contact{
+  display: none;
+}
+.subscribe-box{
+  display: none;
+}
 }
